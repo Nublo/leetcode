@@ -1,11 +1,14 @@
 import java.util.HashSet
 
 /**
+ * https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+ *
  * Given a string, find the length of the longest substring without repeating characters.
  *
+ * Solution:
  * Add char to tempAnswer if it is not in set, otherwise, start cutting first symbols from tempAnswer
- *
- * O(n)
+ * O(N)
+ * N - length of string
  */
 fun lengthOfLongestSubstring(s: String): Int {
     val set = HashSet<Char>()

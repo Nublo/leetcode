@@ -1,4 +1,6 @@
 /**
+ * https://leetcode.com/problems/longest-palindromic-substring/description/
+ *
  * Given a string s, find the longest palindromic substring in s
  *
  * Solution:
@@ -6,6 +8,9 @@
  * f(i,i) -> true
  * f(i,i+1) -> s[i] == s[i+1]
  * f(i,j) -> f(i+1,j-1) && s[i] == s[j]
+ *
+ * O(N^2)
+ * N - length of string
  */
 fun longestPalindrome(s: String): String {
     val f: Array<BooleanArray> = Array(s.length) {
