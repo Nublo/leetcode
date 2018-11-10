@@ -9,6 +9,8 @@ import java.util.Stack
  * Solution:
  * Push in stack items, and if we getting more high value -> take everything from stack with less
  * size and sum to answer
+ * O(N)
+ * N - length of heights array
  */
 
 fun trap(height: IntArray): Int {
