@@ -9,7 +9,7 @@ import java.util.*
  * Just put heads of lists in priorityQueue and iterate while queue is not empty
  *
  * O(N*logK)
- * N - length of lists
+ * N - Total amount of nods
  * K - amount of lists
  */
 
