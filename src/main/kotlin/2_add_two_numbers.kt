@@ -1,7 +1,3 @@
-class ListNode(var `val`: Int = 0) {
-    var next: ListNode? = null
-}
-
 /**
  * https://leetcode.com/problems/add-two-numbers/description/
  *
