@@ -1,7 +1,7 @@
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class RotateNodesTest {
+class ListNodesTests {
 
     @Test
     fun testHelperGeneratorWorks() {
@@ -49,6 +49,12 @@ class RotateNodesTest {
     fun testRotate3GroupWorks() {
         val head = "1->2->3->4->5".toListNode()
         assertEquals("3->2->1->4->5", reverseKGroup(head, 3).toString())
+    }
+
+    @Test
+    fun deleteDuplicates() {
+        val head = "1->2->3->3->4->4->5".toListNode()
+        assertEquals("1->2->5", deleteDuplicates(head).toString())
     }
 
 }
