@@ -40,16 +40,3 @@ fun reverseKGroup(head: ListNode?, k: Int): ListNode? {
         return prev
     }
 }
-
-fun rotateNodes(head: ListNode?): ListNode? {
-    if (head == null) return null
-    var prev: ListNode? = null
-    var current: ListNode? = head
-    while (current != null) {
-        val next = current.next
-        current.next = prev
-        prev = current
-        current = next
-    }
-    return prev
-}

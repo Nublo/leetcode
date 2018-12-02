@@ -12,15 +12,3 @@ class ListNode(var `val`: Int = 0) {
     }
 
 }
-
-fun String.toListNode(): ListNode? {
-    if (this == "null") {
-        return null
-    }
-    val nodes = this.split("->").map { Integer.parseInt(it) }.map { ListNode(it) }
-    val head = nodes.first()
-    for (i in 0 until nodes.size - 1) {
-        nodes[i].next = nodes[i + 1]
-    }
-    return head
-}
