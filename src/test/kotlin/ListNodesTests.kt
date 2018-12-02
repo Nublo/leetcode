@@ -36,7 +36,7 @@ class ListNodesTests {
     @Test
     fun testSimpleRotateWorks() {
         val head = "3->4->5".toListNode()
-        assertEquals("5->4->3", rotateNodes(head).toString())
+        assertEquals("5->4->3", reverseList(head).toString())
     }
 
     @Test
